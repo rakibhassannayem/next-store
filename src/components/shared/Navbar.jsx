@@ -16,6 +16,9 @@ const Navbar = () => {
       <li className="font-medium text-lg">
         <Link href={"/products"}>Products</Link>
       </li>
+      <li className="font-medium text-lg">
+        <Link href={"/protected"}>Protected</Link>
+      </li>
       {user ? (
         <div className="flex items-center gap-4 ml-4">
           <div className="flex flex-col items-end">

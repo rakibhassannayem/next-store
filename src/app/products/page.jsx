@@ -1,13 +1,14 @@
 import ProductCard from "@/components/ProductCard";
+import products from "@/data/products.json";
 
-const getAllProducts = async () => {
-  const res = await fetch("http://localhost:3000/data/products.json");
-  const data = await res.json();
-  return data;
-};
+// const getAllProducts = async () => {
+//   const res = await fetch("http://localhost:3000/data/products.json");
+//   const data = await res.json();
+//   return data;
+// };
 
 const ProductsPage = async () => {
-  const products = await getAllProducts();
+  // const products = await getAllProducts();
   return (
     <div>
       <h2 className="text-4xl pb-4 font-bold">

@@ -16,7 +16,7 @@ const LoginPage = () => {
     const success = login(email, password);
     if (success) {
       toast.success("Login successful!");
-      router.push("/products");
+      router.push("/protected");
     } else {
       toast.error("Invalid email or password");
     }
