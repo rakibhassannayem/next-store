@@ -35,7 +35,7 @@ const LoginPage = () => {
             <input
               type="email"
               placeholder="montu@mia"
-              className="input input-bordered rounded-xl h-14 flex-1"
+              className="input input-bordered rounded-xl h-14 w-full"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -49,7 +49,7 @@ const LoginPage = () => {
             <input
               type="password"
               placeholder="123456"
-              className="input input-bordered rounded-xl h-14 flex-1"
+              className="input input-bordered rounded-xl h-14 w-full"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -59,7 +59,7 @@ const LoginPage = () => {
           <div className="pt-6">
             <button
               type="submit"
-              className="btn btn-primary w-full h-14 rounded-xl text-lg font-bold shadow-lg shadow-primary/30"
+              className="btn btn-primary w-full h-14 rounded-xl text-lg font-bold shadow-lg shadow-primary/30 text-white"
             >
               Log In
             </button>

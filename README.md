@@ -1,6 +1,6 @@
 # Next Store - Premium Electronic Gadgets
 
-**Live Link**: [View Live Demo](https://next-store-ph.vercel.app/)
+**Live Link**: [View Live Demo](https://next-store-five-psi.vercel.app)
 
 Next Store is a modern, high-performance e-commerce landing page and product catalog built with Next.js 15, Tailwind CSS, and DaisyUI. It features a premium design with dynamic components and a mock authentication system.
 
