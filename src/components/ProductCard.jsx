@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
   const { id, image, category, price, name, description, rating, reviews } =
-    product;
+    product || {};
   return (
     <Link href={`/products/${id}`} className="card bg-base-100 shadow-sm hover:shadow-xl hover:scale-102 transition">
       <figure>

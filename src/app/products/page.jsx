@@ -1,5 +1,4 @@
 import ProductCard from "@/components/ProductCard";
-import React from "react";
 
 const getAllProducts = async () => {
   const res = await fetch("http://localhost:3000/data/products.json");
