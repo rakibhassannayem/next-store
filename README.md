@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next Store - Premium Electronic Gadgets
 
-## Getting Started
+**Live Link**: [View Live Demo](https://next-store-ph.vercel.app/)
 
-First, run the development server:
+Next Store is a modern, high-performance e-commerce landing page and product catalog built with Next.js 15, Tailwind CSS, and DaisyUI. It features a premium design with dynamic components and a mock authentication system.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🏠 Home Page Components
+- **Banner**: A high-impact hero section with a call to action and modern layout.
+- **Features**: A grid of service highlights (Secure Payments, Fast Delivery, Global Warranty) with interactive hover states.
+- **Trending Products**: Dynamically fetched product list from internal data, showcasing popular items.
+- **Stats**: A visual breakdown of company milestones using icons and clear metrics.
+- **Testimonials**: Customer reviews with star ratings and avatars in a clean grid.
+- **FAQ**: An organized accordion section for common customer questions.
+- **CTA**: A bottom call-to-action section for user engagement.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🔐 Authentication
+- **Mock Login System**: Supports login with hardcoded credentials (`montu@mia` / `123456`).
+- **Session Management**: Uses `js-cookie` to persist user sessions.
+- **Dynamic Header**: Navbar updates state based on authentication (User info + Logout).
+- **Route Protection**: Implemented custom logic in `proxy.js` to handle restricted access to certain sections.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Setup & Installation
 
-## Learn More
+### Prerequisites
+- Node.js (Latest LTS recommended)
+- npm or yarn
 
-To learn more about Next.js, take a look at the following resources:
+### Steps
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd next-store
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-## Deploy on Vercel
+## 📍 Route Summary
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Route | Access | Description |
+|-------|--------|-------------|
+| `/` | Public | Home landing page with all featured sections. |
+| `/login` | Public | Authentication page for mock login. |
+| `/products` | Protected* | Product catalog showing all available items. |
+| `/products/[id]` | Protected* | Detailed view for a specific product. |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*\*Note: Route protection is currently managed via `proxy.js`.*
+
+## 💻 Tech Stack
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS, DaisyUI
+- **Icons**: React Icons
+- **Notifications**: React Toastify
+- **State/Auth**: React Context, JS Cookie
