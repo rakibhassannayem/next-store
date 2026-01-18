@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral text-neutral-content p-4">
+    <footer className="p-6 pt-0">
       <div className="footer sm:footer-horizontal items-center container mx-auto">
         <aside className="grid-flow-col items-center">
           <Logo />
